@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0 10px;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  min-height: 60px;
+}
+
+/* make the map expand to fill available space */
+#map {
+  flex-grow: 1;
+  overflow: auto;
+}
+/* set the cursor for map navigation */
+#map canvas {
+  cursor: crosshair;
+}
+
+/* popup styling */
+.popup dt {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.popup dd {
+  margin-left: 10px;
+}

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./demo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Koordinates tile services with Mapbox GL demo</h1>
+    </header>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- HTML5 template for popup content -->
+    <template id="popup-template">
+      <div class="popup">
+        <h2>Nearest Quake</h2>
+        <dl>
+          <dt>Time</dt>
+          <dd class="origintime"></dd>
+          <dt>Magnitude</dt>
+          <dd class="magnitude"></dd>
+          <dt>Depth</dt>
+          <dd><span class="depth"></span> km</dd>
+        </dl>
+      </div>
+    </template>
+    <script src="./demo.js"></script>
+  </body>
+</html>
